@@ -23,6 +23,25 @@ MainWindow::MainWindow(QWidget *parent) :
        ui->ToLungime->addItem("km");
        ui->ToLungime->addItem("mm");
 
+
+       // Convertire ARIE din ->>
+          ui->FromArie->addItem("m²");
+          ui->FromArie->addItem("cm²");
+          ui->FromArie->addItem("ft²");
+          ui->FromArie->addItem("in²");
+          ui->FromArie->addItem("km²");
+          ui->FromArie->addItem("mm²");
+          ui->FromArie->addItem("ha");
+
+          // Convertire ARIE in ->>
+          ui->ToArie->addItem("m²");
+          ui->ToArie->addItem("cm²");
+          ui->ToArie->addItem("ft²");
+          ui->ToArie->addItem("in²");
+          ui->ToArie->addItem("km²");
+          ui->ToArie->addItem("mm²");
+          ui->ToArie->addItem("ha");
+
 }
 
 MainWindow::~MainWindow()
