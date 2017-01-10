@@ -7,7 +7,21 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    // Convertire LUNGIME din ->>
+       ui->FromLungime->addItem("m");
+       ui->FromLungime->addItem("cm");
+       ui->FromLungime->addItem("ft");
+       ui->FromLungime->addItem("in");
+       ui->FromLungime->addItem("km");
+       ui->FromLungime->addItem("mm");
 
+       // Convertire LUNGIME in ->>
+       ui->ToLungime->addItem("m");
+       ui->ToLungime->addItem("cm");
+       ui->ToLungime->addItem("ft");
+       ui->ToLungime->addItem("in");
+       ui->ToLungime->addItem("km");
+       ui->ToLungime->addItem("mm");
 
 }
 
