@@ -357,7 +357,7 @@ void MainWindow::on_calculeazaButton_clicked()
                      ui->outputArie->setText(rezultat);
                  }
                  else if (ToArieComboBox == "km²"){
-                     float kilometru = arie.toFloat() * 1e-10;
+                     float kilometru = arie.toFloat() * (1e-10);
                      QString rezultat = QString::number(kilometru);
                      ui->outputArie->setText(rezultat);
                  }
@@ -367,7 +367,46 @@ void MainWindow::on_calculeazaButton_clicked()
                      ui->outputArie->setText(rezultat);
                  }
                  else if (ToArieComboBox == "ha"){
-                     float hectar = arie.toFloat() * 1e-8;
+                     float hectar = arie.toFloat() * (1e-8);
+                     QString rezultat = QString::number(hectar);
+                     ui->outputArie->setText(rezultat);
+                 }
+      }
+
+
+             if( FromArieComboBox == "ft²"){ // Verificam daca convertim din ft
+                 if (ToArieComboBox == "m²"){
+                     float metru = arie.toFloat() * 0.0929;
+                     QString rezultat = QString::number(metru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "cm²"){
+                     float centimetru = arie.toFloat() * 928.9999999999999;
+                     QString rezultat = QString::number(centimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ft²"){
+                     float picior = arie.toFloat() * 1;
+                     QString rezultat = QString::number(picior);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "in²"){
+                     float inch = arie.toFloat() * 143.9863608183509;
+                     QString rezultat = QString::number(inch);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "km²"){
+                     float kilometru = arie.toFloat() * (9.289999999999999e-8);
+                     QString rezultat = QString::number(kilometru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "mm²"){
+                     float milimetru = arie.toFloat() * 92900;
+                     QString rezultat = QString::number(milimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ha"){
+                     float hectar = arie.toFloat() * 0.000009289999999999999;
                      QString rezultat = QString::number(hectar);
                      ui->outputArie->setText(rezultat);
                  }
