@@ -288,4 +288,53 @@ void MainWindow::on_calculeazaButton_clicked()
 
       }
 
+
+
+    QString arie = ui->inputArie->text();
+      if (arie.length() != 0){
+
+          QString FromArieComboBox = ui->FromArie->currentText();
+          QString ToArieComboBox = ui->ToArie->currentText();
+
+
+             if( FromArieComboBox == "m²"){ // Verificam daca convertim din metri
+                 if (ToArieComboBox == "m²"){
+                     float metru = arie.toFloat() * 1;
+                     QString rezultat = QString::number(metru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "cm²"){
+                     float centimetru = arie.toFloat() * 10000;
+                     QString rezultat = QString::number(centimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ft²"){
+                     float picior = arie.toFloat() * 10.764262648008613;
+                     QString rezultat = QString::number(picior);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "in²"){
+                     float inch = arie.toFloat() * 1549.9070055796653;
+                     QString rezultat = QString::number(inch);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "km²"){
+                     float kilometru = arie.toFloat() * 0.000001;
+                     QString rezultat = QString::number(kilometru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "mm²"){
+                     float milimetru = arie.toFloat() * 1000000;
+                     QString rezultat = QString::number(milimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ha"){
+                     float hectar = arie.toFloat() * 0.0001;
+                     QString rezultat = QString::number(hectar);
+                     ui->outputArie->setText(rezultat);
+                 }
+      }
+
 }
+}
+
