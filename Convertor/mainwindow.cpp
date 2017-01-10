@@ -335,6 +335,45 @@ void MainWindow::on_calculeazaButton_clicked()
                  }
       }
 
+             if( FromArieComboBox == "cm²"){ // Verificam daca convertim din centimetri
+                 if (ToArieComboBox == "m²"){
+                     float metru = arie.toFloat() * 0.0001;
+                     QString rezultat = QString::number(metru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "cm²"){
+                     float centimetru = arie.toFloat() * 1;
+                     QString rezultat = QString::number(centimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ft²"){
+                     float picior = arie.toFloat() * 0.0010764262648008613;
+                     QString rezultat = QString::number(picior);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "in²"){
+                     float inch = arie.toFloat() * 0.15499070055796654;
+                     QString rezultat = QString::number(inch);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "km²"){
+                     float kilometru = arie.toFloat() * 1e-10;
+                     QString rezultat = QString::number(kilometru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "mm²"){
+                     float milimetru = arie.toFloat() * 100.00000000000001;
+                     QString rezultat = QString::number(milimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ha"){
+                     float hectar = arie.toFloat() * 1e-8;
+                     QString rezultat = QString::number(hectar);
+                     ui->outputArie->setText(rezultat);
+                 }
+      }
+
+
 }
 }
 
