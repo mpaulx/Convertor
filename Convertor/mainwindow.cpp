@@ -489,6 +489,44 @@ void MainWindow::on_calculeazaButton_clicked()
                  }
       }
 
+             if( FromArieComboBox == "mm²"){ // Verificam daca convertim din milimetri
+                 if (ToArieComboBox == "m²"){
+                     float metru = arie.toFloat() * 0.000001;
+                     QString rezultat = QString::number(metru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "cm²"){
+                     float centimetru = arie.toFloat() * 0.009999999999999998;
+                     QString rezultat = QString::number(centimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ft²"){
+                     float picior = arie.toFloat() * 0.000010764262648008611;
+                     QString rezultat = QString::number(picior);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "in²"){
+                     float inch = arie.toFloat() * 0.0015499070055796653;
+                     QString rezultat = QString::number(inch);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "km²"){
+                     float kilometru = arie.toFloat() * (1e-12);
+                     QString rezultat = QString::number(kilometru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "mm²"){
+                     float milimetru = arie.toFloat() * 1;
+                     QString rezultat = QString::number(milimetru);
+                     ui->outputArie->setText(rezultat);
+                 }
+                 else if (ToArieComboBox == "ha"){
+                     float hectar = arie.toFloat() * (9.999999999999999e-11);
+                     QString rezultat = QString::number(hectar);
+                     ui->outputArie->setText(rezultat);
+                 }
+      }
+
 }
 }
 
