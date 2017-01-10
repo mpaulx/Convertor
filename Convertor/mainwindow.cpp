@@ -33,6 +33,53 @@ MainWindow::~MainWindow()
 void MainWindow::on_calculeazaButton_clicked()
 {
 
+    QString lungime = ui->inputLungime->text();
+      if (lungime.length() != 0){
+         QString FromLungimeComboBox = ui->FromLungime->currentText();
+         QString toLungimeComboBox = ui->ToLungime->currentText();
+           // qDebug(qUtf8Printable(FromLungimeComboBox));
 
+            if( FromLungimeComboBox == "m"){ // Verificam daca convertim din metri
+                if (toLungimeComboBox == "m"){
+                    float metru = lungime.toFloat() * 1;
+                    QString rezultat = QString::number(metru);
+                    ui->outputLungime->setText(rezultat);
+                }
+
+                 else if (toLungimeComboBox == "cm"){
+                     float centimetru = lungime.toFloat() * 100;
+                     QString rezultat = QString::number(centimetru);
+                     ui->outputLungime->setText(rezultat);
+                 }
+                 else if (toLungimeComboBox == "ft"){
+                    float picior = lungime.toFloat() * 3.280839895013123;
+                    QString rezultat = QString::number(picior);
+                    ui->outputLungime->setText(rezultat);
+                }
+                 else if (toLungimeComboBox == "in"){
+                    float inch = lungime.toFloat() * 39.37007;
+                    QString rezultat = QString::number(inch);
+                    ui->outputLungime->setText(rezultat);
+                }
+                 else if (toLungimeComboBox == "km"){
+                    float kilometru = lungime.toFloat() * 0.001;
+                    QString rezultat = QString::number(kilometru);
+                    ui->outputLungime->setText(rezultat);
+                }
+                 else if (toLungimeComboBox == "mm"){
+                    float milimetru = lungime.toFloat() * 1000;
+                    QString rezultat = QString::number(milimetru);
+                    ui->outputLungime->setText(rezultat);
+                }
+
+
+            }
+
+
+
+
+
+         // qDebug(qUtf8Printable(a));
+      }
 
 }
