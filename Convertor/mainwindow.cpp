@@ -111,6 +111,46 @@ void MainWindow::on_calculeazaButton_clicked()
 
                   }
 
+            if( FromLungimeComboBox == "ft"){ // Verificam daca convertim din ft
+                      if (toLungimeComboBox == "m"){
+                          float metru = lungime.toFloat() * 0.3048;
+                          QString rezultat = QString::number(metru);
+                          ui->outputLungime->setText(rezultat);
+                      }
+
+                       else if (toLungimeComboBox == "cm"){
+                           float centimetru = lungime.toFloat() * 30.48;
+                           QString rezultat = QString::number(centimetru);
+                           ui->outputLungime->setText(rezultat);
+                       }
+                       else if (toLungimeComboBox == "ft"){
+                          float picior = lungime.toFloat() * 1;
+                          QString rezultat = QString::number(picior);
+                          ui->outputLungime->setText(rezultat);
+                      }
+                       else if (toLungimeComboBox == "in"){
+                          float inch = lungime.toFloat() * 12.000000000000002;
+                          QString rezultat = QString::number(inch);
+                          ui->outputLungime->setText(rezultat);
+                      }
+                       else if (toLungimeComboBox == "km"){
+                          float kilometru = lungime.toFloat() * 0.00030480000000000004;
+                          QString rezultat = QString::number(kilometru);
+                          ui->outputLungime->setText(rezultat);
+                      }
+                       else if (toLungimeComboBox == "mm"){
+                          float milimetru = lungime.toFloat() * 304.8;
+                          QString rezultat = QString::number(milimetru);
+                          ui->outputLungime->setText(rezultat);
+                      }
+
+
+                  }
+
+
+
+
+
 
 
 
