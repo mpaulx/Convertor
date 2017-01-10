@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputLungime"/>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputLungime"/>
+    </item>
+    <item row="0" column="11" colspan="2">
+     <widget class="QComboBox" name="ToLungime"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>Arie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputArie"/>
+    </item>
+    <item row="1" column="3" colspan="2">
+     <widget class="QComboBox" name="FromArie"/>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputArie"/>
+    </item>
+    <item row="1" column="11" colspan="2">
+     <widget class="QComboBox" name="ToArie"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>Lungime</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" colspan="2">
+     <widget class="QComboBox" name="FromLungime"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>Volum</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputTemperatura"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>Viteza</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>Timp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3" colspan="2">
+     <widget class="QComboBox" name="FromTimp"/>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputViteza"/>
+    </item>
+    <item row="4" column="11" colspan="2">
+     <widget class="QComboBox" name="ToViteza"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>Temperatura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputTemperatura"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_17">
+      <property name="text">
+       <string>Masa</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputViteza"/>
+    </item>
+    <item row="6" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputMasa"/>
+    </item>
+    <item row="2" column="3" colspan="2">
+     <widget class="QComboBox" name="FromVolum"/>
+    </item>
+    <item row="6" column="3" colspan="2">
+     <widget class="QComboBox" name="FromMasa"/>
+    </item>
+    <item row="6" column="11" colspan="2">
+     <widget class="QComboBox" name="ToMasa"/>
+    </item>
+    <item row="3" column="11" colspan="2">
+     <widget class="QComboBox" name="ToTimp"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>Energie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputTimp"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="InputVolum"/>
+    </item>
+    <item row="7" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputEnergie"/>
+    </item>
+    <item row="4" column="3" colspan="2">
+     <widget class="QComboBox" name="FromViteza"/>
+    </item>
+    <item row="5" column="3" colspan="2">
+     <widget class="QComboBox" name="FromTemperatura"/>
+    </item>
+    <item row="3" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputTimp"/>
+    </item>
+    <item row="2" column="11" colspan="2">
+     <widget class="QComboBox" name="ToVolum"/>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputMasa"/>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputVolum"/>
+    </item>
+    <item row="5" column="11" colspan="2">
+     <widget class="QComboBox" name="ToTemperatura"/>
+    </item>
+    <item row="6" column="5">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="9">
+     <widget class="QPushButton" name="calculeazaButton">
+      <property name="text">
+       <string>Calculeaza</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="11" colspan="2">
+     <widget class="QComboBox" name="ToEnergie"/>
+    </item>
+    <item row="8" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputPresiune"/>
+    </item>
+    <item row="8" column="11" colspan="2">
+     <widget class="QComboBox" name="ToPresiune"/>
+    </item>
+    <item row="9" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputDensitate"/>
+    </item>
+    <item row="8" column="3" colspan="2">
+     <widget class="QComboBox" name="FromPresiune"/>
+    </item>
+    <item row="9" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputDensitate"/>
+    </item>
+    <item row="9" column="5">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputEnergie"/>
+    </item>
+    <item row="13" column="10" colspan="3">
+     <widget class="QPushButton" name="stergeButton">
+      <property name="text">
+       <string>Sterge</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputPresiune"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>Densitate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3" colspan="2">
+     <widget class="QComboBox" name="FromEnergie"/>
+    </item>
+    <item row="9" column="3" colspan="2">
+     <widget class="QComboBox" name="FromDensitate"/>
+    </item>
+    <item row="9" column="11" colspan="2">
+     <widget class="QComboBox" name="ToDensitate"/>
+    </item>
+    <item row="8" column="5">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Presiune</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="5">
+     <widget class="QLabel" name="label_21">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_23">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Consum combustibil</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1" colspan="2">
+     <widget class="QLineEdit" name="inputConsum"/>
+    </item>
+    <item row="10" column="3" colspan="2">
+     <widget class="QComboBox" name="FromConsum"/>
+    </item>
+    <item row="10" column="6" colspan="5">
+     <widget class="QLineEdit" name="outputConsum"/>
+    </item>
+    <item row="10" column="11" colspan="2">
+     <widget class="QComboBox" name="ToConsum"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>527</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUtil">
+    <property name="title">
+     <string>Util</string>
+    </property>
+    <addaction name="actionDescriere_unitati_masura"/>
+   </widget>
+   <addaction name="menuUtil"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDescriere_unitati_masura">
+   <property name="text">
+    <string>Descriere unitati masura</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
