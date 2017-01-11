@@ -794,7 +794,7 @@ void MainWindow::on_calculeazaButton_clicked()
                    }
                }
 
-               if( FromVolumComboBox == "ft³"){ // Verificam daca convertim din ft³ cubi
+               if( FromVolumComboBox == "ft³"){ // Verificam daca convertim din ft³
                    if (ToVolumComboBox == "cl"){
                        float centilitru = volum.toFloat() * 2832;
                        QString rezultat = QString::number(centilitru);
@@ -843,7 +843,7 @@ void MainWindow::on_calculeazaButton_clicked()
                    }
                }
 
-               if( FromVolumComboBox == "in³"){ // Verificam daca convertim din in³ cubi
+               if( FromVolumComboBox == "in³"){ // Verificam daca convertim din in³
                    if (ToVolumComboBox == "cl"){
                        float centilitru = volum.toFloat() * 1.639;
                        QString rezultat = QString::number(centilitru);
@@ -891,7 +891,101 @@ void MainWindow::on_calculeazaButton_clicked()
                    }
                }
 
+               if( FromVolumComboBox == "l"){ // Verificam daca convertim din litri
+                   if (ToVolumComboBox == "cl"){
+                       float centilitru = volum.toFloat() * 100;
+                       QString rezultat = QString::number(centilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "cm³"){
+                       float centimetru = volum.toFloat() * 1000;
+                       QString rezultat = QString::number(centimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dl"){
+                       float decilitru = volum.toFloat() * 10;
+                       QString rezultat = QString::number(decilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dm³"){
+                       float decimetru = volum.toFloat() * 1;
+                       QString rezultat = QString::number(decimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ft³"){
+                       float picior = volum.toFloat() * 0.03531;
+                       QString rezultat = QString::number(picior);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "in³"){
+                       float inch = volum.toFloat() * 61.02;
+                       QString rezultat = QString::number(inch);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "l"){
+                       float litru = volum.toFloat() * 1;
+                       QString rezultat = QString::number(litru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "m³"){
+                       float metru = volum.toFloat() * 0.001;
+                       QString rezultat = QString::number(metru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ml"){
+                       float mililitru = volum.toFloat() * 1000;
+                       QString rezultat = QString::number(mililitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+               }
 
+               if( FromVolumComboBox == "m³"){ // Verificam daca convertim din m³
+                   if (ToVolumComboBox == "cl"){
+                       float centilitru = volum.toFloat() * 100000;
+                       QString rezultat = QString::number(centilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "cm³"){
+                       float centimetru = volum.toFloat() * 1000000;
+                       QString rezultat = QString::number(centimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dl"){
+                       float decilitru = volum.toFloat() * 10000;
+                       QString rezultat = QString::number(decilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dm³"){
+                       float decimetru = volum.toFloat() * 1000;
+                       QString rezultat = QString::number(decimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ft³"){
+                       float picior = volum.toFloat() * 35.31;
+                       QString rezultat = QString::number(picior);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "in³"){
+                       float inch = volum.toFloat() * 61020;
+                       QString rezultat = QString::number(inch);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "l"){
+                       float litru = volum.toFloat() * 1000;
+                       QString rezultat = QString::number(litru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "m³"){
+                       float metru = volum.toFloat() * 1;
+                       QString rezultat = QString::number(metru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ml"){
+                       float mililitru = volum.toFloat() * 1000000;
+                       QString rezultat = QString::number(mililitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+               }
 }
 }
 
