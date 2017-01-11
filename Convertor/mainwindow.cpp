@@ -42,6 +42,28 @@ MainWindow::MainWindow(QWidget *parent) :
           ui->ToArie->addItem("mm²");
           ui->ToArie->addItem("ha");
 
+          // Convertire VOLUM din ->>
+             ui->FromVolum->addItem("cl");
+             ui->FromVolum->addItem("cm³");
+             ui->FromVolum->addItem("dl");
+             ui->FromVolum->addItem("dm³");
+             ui->FromVolum->addItem("ft³");
+             ui->FromVolum->addItem("in³");
+             ui->FromVolum->addItem("l");
+             ui->FromVolum->addItem("m³");
+             ui->FromVolum->addItem("ml");
+
+             // Convertire VOLUM in ->>
+             ui->ToVolum->addItem("cl");
+             ui->ToVolum->addItem("cm³");
+             ui->ToVolum->addItem("dl");
+             ui->ToVolum->addItem("dm³");
+             ui->ToVolum->addItem("ft³");
+             ui->ToVolum->addItem("in³");
+             ui->ToVolum->addItem("l");
+             ui->ToVolum->addItem("m³");
+             ui->ToVolum->addItem("ml");
+
 }
 
 MainWindow::~MainWindow()
