@@ -43,26 +43,26 @@ MainWindow::MainWindow(QWidget *parent) :
           ui->ToArie->addItem("ha");
 
           // Convertire VOLUM din ->>
-             ui->FromVolum->addItem("cl");
-             ui->FromVolum->addItem("cm³");
-             ui->FromVolum->addItem("dl");
-             ui->FromVolum->addItem("dm³");
-             ui->FromVolum->addItem("ft³");
-             ui->FromVolum->addItem("in³");
-             ui->FromVolum->addItem("l");
-             ui->FromVolum->addItem("m³");
-             ui->FromVolum->addItem("ml");
+           ui->FromVolum->addItem("cl");
+           ui->FromVolum->addItem("cm³");
+           ui->FromVolum->addItem("dl");
+           ui->FromVolum->addItem("dm³");
+           ui->FromVolum->addItem("ft³");
+           ui->FromVolum->addItem("in³");
+           ui->FromVolum->addItem("l");
+           ui->FromVolum->addItem("m³");
+           ui->FromVolum->addItem("ml");
 
-             // Convertire VOLUM in ->>
-             ui->ToVolum->addItem("cl");
-             ui->ToVolum->addItem("cm³");
-             ui->ToVolum->addItem("dl");
-             ui->ToVolum->addItem("dm³");
-             ui->ToVolum->addItem("ft³");
-             ui->ToVolum->addItem("in³");
-             ui->ToVolum->addItem("l");
-             ui->ToVolum->addItem("m³");
-             ui->ToVolum->addItem("ml");
+           // Convertire VOLUM in ->>
+           ui->ToVolum->addItem("cl");
+           ui->ToVolum->addItem("cm³");
+           ui->ToVolum->addItem("dl");
+           ui->ToVolum->addItem("dm³");
+           ui->ToVolum->addItem("ft³");
+           ui->ToVolum->addItem("in³");
+           ui->ToVolum->addItem("l");
+           ui->ToVolum->addItem("m³");
+           ui->ToVolum->addItem("ml");
 
 }
 
@@ -588,6 +588,64 @@ void MainWindow::on_calculeazaButton_clicked()
                  }
       }
 
+}
+
+
+
+    QString volum = ui->InputVolum->text();
+      if (volum.length() != 0){
+
+          QString FromVolumComboBox = ui->FromVolum->currentText();
+          QString ToVolumComboBox = ui->ToVolum->currentText();
+
+               if( FromVolumComboBox == "cl"){ // Verificam daca convertim din centilitri
+                   if (ToVolumComboBox == "cl"){
+                       float centilitru = volum.toFloat() * 1;
+                       QString rezultat = QString::number(centilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "cm³"){
+                       float centimetru = volum.toFloat() * 10;
+                       QString rezultat = QString::number(centimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dl"){
+                       float decilitru = volum.toFloat() * 0.1;
+                       QString rezultat = QString::number(decilitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "dm³"){
+                       float decimetru = volum.toFloat() * 0.01;
+                       QString rezultat = QString::number(decimetru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ft³"){
+                       float picior = volum.toFloat() * 0.0003531;
+                       QString rezultat = QString::number(picior);
+                       ui->outputVolum->setText(rezultat);
+                   }
+
+                   else if (ToVolumComboBox == "in³"){
+                       float inch = volum.toFloat() * 0.6102;
+                       QString rezultat = QString::number(inch);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "l"){
+                       float litru = volum.toFloat() * 0.01;
+                       QString rezultat = QString::number(litru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "m³"){
+                       float metru = volum.toFloat() * 0.00001;
+                       QString rezultat = QString::number(metru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+                   else if (ToVolumComboBox == "ml"){
+                       float mililitru = volum.toFloat() * 10;
+                       QString rezultat = QString::number(mililitru);
+                       ui->outputVolum->setText(rezultat);
+                   }
+               }
 }
 }
 
