@@ -64,6 +64,29 @@ MainWindow::MainWindow(QWidget *parent) :
            ui->ToVolum->addItem("m³");
            ui->ToVolum->addItem("ml");
 
+           // Convertire TIMP din ->>
+           ui->FromTimp->addItem("s");
+           ui->FromTimp->addItem("min");
+           ui->FromTimp->addItem("h");
+           ui->FromTimp->addItem("zi");
+           ui->FromTimp->addItem("sapt");
+           ui->FromTimp->addItem("lun");
+           ui->FromTimp->addItem("an");
+           ui->FromTimp->addItem("dec");
+           ui->FromTimp->addItem("sec");
+
+
+           // Convertire TIMP in ->>
+           ui->ToTimp->addItem("s");
+           ui->ToTimp->addItem("min");
+           ui->ToTimp->addItem("h");
+           ui->ToTimp->addItem("zi");
+           ui->ToTimp->addItem("sapt");
+           ui->ToTimp->addItem("lun");
+           ui->ToTimp->addItem("an");
+           ui->ToTimp->addItem("dec");
+           ui->ToTimp->addItem("sec");
+
 }
 
 MainWindow::~MainWindow()
