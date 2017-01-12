@@ -100,6 +100,18 @@ MainWindow::MainWindow(QWidget *parent) :
            ui->ToViteza->addItem("mph");
            ui->ToViteza->addItem("m/s");
 
+
+           // Convertire TEMPERATURA din ->>
+           ui->FromTemperatura->addItem("°C");
+           ui->FromTemperatura->addItem("°F");
+           ui->FromTemperatura->addItem("K");
+
+           // Convertire TEMPERATURA in ->>
+           ui->ToTemperatura->addItem("°C");
+           ui->ToTemperatura->addItem("°F");
+           ui->ToTemperatura->addItem("K");
+
+
 }
 
 MainWindow::~MainWindow()
