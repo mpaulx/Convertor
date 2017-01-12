@@ -111,6 +111,20 @@ MainWindow::MainWindow(QWidget *parent) :
            ui->ToTemperatura->addItem("°F");
            ui->ToTemperatura->addItem("K");
 
+           // Convertire MASA din ->>
+              ui->FromMasa->addItem("mg");
+              ui->FromMasa->addItem("cg");
+              ui->FromMasa->addItem("g");
+              ui->FromMasa->addItem("kg");
+              ui->FromMasa->addItem("t");
+
+              // Convertire MASA in ->>
+                 ui->ToMasa->addItem("mg");
+                 ui->ToMasa->addItem("cg");
+                 ui->ToMasa->addItem("g");
+                 ui->ToMasa->addItem("kg");
+                 ui->ToMasa->addItem("t");
+
 
 }
 
