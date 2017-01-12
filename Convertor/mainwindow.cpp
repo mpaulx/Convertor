@@ -1072,47 +1072,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 1;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 0.01667;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 0.0002778;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 0.00001157;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 0.000001653;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 0.0000003803;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.00000003169;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.000000003169;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.0000000003169;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1121,47 +1121,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 60;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 1;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 0.01667;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 0.0006944;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 0.00009921;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 0.00002282;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.000001901;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.0000001901;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.00000001901;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1170,47 +1170,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 3600;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 60;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 1;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 0.04167;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 0.005952;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 0.001369;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.0001141;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.00001141;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.000001141;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1219,47 +1219,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 86400;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 1440;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 24;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 1;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 0.1429;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 0.03285;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.002738;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.0002738;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.00002738;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1268,47 +1268,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 604800;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 10080;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 168;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 7;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 1;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 0.23;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.01916;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.001916;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.0001916;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1317,47 +1317,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 2630000;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 43830;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 730.5;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 30.44;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 4.348;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 1;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 0.08334;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.008334;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.0008334;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1366,47 +1366,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 31560000;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 526000;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 8767;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 365.3;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 52.18;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 12;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 1;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 0.1;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.01;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1415,47 +1415,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 315600000;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 5260000;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 87670;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 3653;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 521.8;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 120;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 10;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 1;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 0.1;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
@@ -1465,47 +1465,47 @@ void MainWindow::on_calculeazaButton_clicked()
                      if (ToTimpCombobox == "s"){
                          float secunda = timp.toFloat() * 3156000000;
                          QString rezultat = QString::number(secunda);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "min"){
                          float minut = timp.toFloat() * 52600000;
                          QString rezultat = QString::number(minut);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "h"){
                          float ora = timp.toFloat() * 876700;
                          QString rezultat = QString::number(ora);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "zi"){
                          float zi = timp.toFloat() * 36530;
                          QString rezultat = QString::number(zi);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sapt"){
                          float saptamana = timp.toFloat() * 5218;
                          QString rezultat = QString::number(saptamana);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "lun"){
                          float luna = timp.toFloat() * 1200;
                          QString rezultat = QString::number(luna);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "an"){
                          float an = timp.toFloat() * 100;
                          QString rezultat = QString::number(an);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "dec"){
                          float deceniu = timp.toFloat() * 10;
                          QString rezultat = QString::number(deceniu);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
                      else if (ToTimpCombobox == "sec"){
                          float secol = timp.toFloat() * 1;
                          QString rezultat = QString::number(secol);
-                         ui->outputVolum->setText(rezultat);
+                         ui->outputTimp->setText(rezultat);
                      }
 
                  }
