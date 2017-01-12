@@ -127,7 +127,21 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
+           // Convertire ENERGIE din ->>
+           ui->FromEnergie->addItem("J");
+           ui->FromEnergie->addItem("kJ");
+           ui->FromEnergie->addItem("cal");
+           ui->FromEnergie->addItem("kcal");
+           ui->FromEnergie->addItem("W/h");
+           ui->FromEnergie->addItem("KW/h");
 
+           // Convertire ENERGIE in ->>
+           ui->ToEnergie->addItem("J");
+           ui->ToEnergie->addItem("kJ");
+           ui->ToEnergie->addItem("cal");
+           ui->ToEnergie->addItem("kcal");
+           ui->ToEnergie->addItem("W/h");
+           ui->ToEnergie->addItem("KW/h");
 
 }
 
