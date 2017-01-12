@@ -144,6 +144,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->ToEnergie->addItem("KW/h");
 
 
+    // Convertire PRESIUNE din ->>
+    ui->FromPresiune->addItem("bar");
+    ui->FromPresiune->addItem("psi");
+
+    // Convertire PRESIUNE in ->>
+    ui->ToPresiune->addItem("bar");
+    ui->ToPresiune->addItem("psi");
+
 }
 
 MainWindow::~MainWindow()
