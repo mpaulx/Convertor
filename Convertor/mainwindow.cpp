@@ -87,6 +87,19 @@ MainWindow::MainWindow(QWidget *parent) :
            ui->ToTimp->addItem("dec");
            ui->ToTimp->addItem("sec");
 
+
+
+           // Convertire VITEZE din ->>
+           ui->FromViteza->addItem("km/h");
+           ui->FromViteza->addItem("mph");
+           ui->FromViteza->addItem("m/s");
+
+
+           // Convertire VITEZE in ->>
+           ui->ToViteza->addItem("km/h");
+           ui->ToViteza->addItem("mph");
+           ui->ToViteza->addItem("m/s");
+
 }
 
 MainWindow::~MainWindow()
