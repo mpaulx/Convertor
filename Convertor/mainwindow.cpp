@@ -1677,5 +1677,162 @@ void MainWindow::on_calculeazaButton_clicked()
       }
 
 
+      QString masa = ui->inputMasa->text();
+        if (masa.length() != 0){
+
+                  QString FromMasaComboBox = ui->FromMasa->currentText();
+                  QString ToMasaComboBox = ui->ToMasa->currentText();
+
+                       if( FromMasaComboBox == "mg"){ // Verificam daca convertim din miligram
+                           if (ToMasaComboBox == "mg"){
+                               float mg = masa.toFloat() * 1;
+                               QString rezultat = QString::number(mg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "cg"){
+                               float cg = masa.toFloat() * 0.1;
+                               QString rezultat = QString::number(cg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "g"){
+                               float g = masa.toFloat() * 0.001;
+                               QString rezultat = QString::number(g);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "kg"){
+                               float kg = masa.toFloat() * 0.000001;
+                               QString rezultat = QString::number(kg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "t"){
+                               float t = masa.toFloat() * 0.000000001;
+                               QString rezultat = QString::number(t);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+
+
+                       }
+
+                       if( FromMasaComboBox == "cg"){ // Verificam daca convertim din centigram
+                           if (ToMasaComboBox == "mg"){
+                               float mg = masa.toFloat() * 10;
+                               QString rezultat = QString::number(mg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "cg"){
+                               float cg = masa.toFloat() * 1;
+                               QString rezultat = QString::number(cg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "g"){
+                               float g = masa.toFloat() * 0.01;
+                               QString rezultat = QString::number(g);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "kg"){
+                               float kg = masa.toFloat() * 0.00001;
+                               QString rezultat = QString::number(kg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "t"){
+                               float t = masa.toFloat() * 0.00000001;
+                               QString rezultat = QString::number(t);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+
+
+                       }
+
+
+                       if( FromMasaComboBox == "g"){ // Verificam daca convertim din gram
+                           if (ToMasaComboBox == "mg"){
+                               float mg = masa.toFloat() * 1000;
+                               QString rezultat = QString::number(mg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "cg"){
+                               float cg = masa.toFloat() * 100;
+                               QString rezultat = QString::number(cg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "g"){
+                               float g = masa.toFloat() * 1;
+                               QString rezultat = QString::number(g);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "kg"){
+                               float kg = masa.toFloat() * 0.001;
+                               QString rezultat = QString::number(kg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "t"){
+                               float t = masa.toFloat() * 0.000001;
+                               QString rezultat = QString::number(t);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+
+
+                       }
+
+                       if( FromMasaComboBox == "kg"){ // Verificam daca convertim din kilogram
+                           if (ToMasaComboBox == "mg"){
+                               float mg = masa.toFloat() * 1000000;
+                               QString rezultat = QString::number(mg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "cg"){
+                               float cg = masa.toFloat() * 100000;
+                               QString rezultat = QString::number(cg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "g"){
+                               float g = masa.toFloat() * 1000;
+                               QString rezultat = QString::number(g);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "kg"){
+                               float kg = masa.toFloat() * 1;
+                               QString rezultat = QString::number(kg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "t"){
+                               float t = masa.toFloat() * 0.001;
+                               QString rezultat = QString::number(t);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+
+
+                       }
+
+                       if( FromMasaComboBox == "t"){ // Verificam daca convertim din tone
+                           if (ToMasaComboBox == "mg"){
+                               float mg = masa.toFloat() * 1000000000;
+                               QString rezultat = QString::number(mg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "cg"){
+                               float cg = masa.toFloat() * 100000000;
+                               QString rezultat = QString::number(cg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "g"){
+                               float g = masa.toFloat() * 1000000;
+                               QString rezultat = QString::number(g);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "kg"){
+                               float kg = masa.toFloat() * 1000;
+                               QString rezultat = QString::number(kg);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+                           else if (ToMasaComboBox == "t"){
+                               float t = masa.toFloat() * 1;
+                               QString rezultat = QString::number(t);
+                               ui->outputTemperatura->setText(rezultat);
+                           }
+
+
+                       }
+        }
 }
 
