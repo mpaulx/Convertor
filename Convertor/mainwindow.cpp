@@ -1598,5 +1598,70 @@ void MainWindow::on_calculeazaButton_clicked()
                        }
                    }
       }
+
+
+
+    QString temperatura = ui->inputTemperatura->text();
+      if (temperatura.length() != 0){
+
+                QString FromTemperaturaComboBox = ui->FromTemperatura->currentText();
+                QString ToTemperaturaComboBox = ui->ToTemperatura->currentText();
+
+                     if( FromTemperaturaComboBox == "°C"){ // Verificam daca convertim din grade celsius
+                         if (ToTemperaturaComboBox == "°C"){
+                             float celsius = temperatura.toFloat() * 1;
+                             QString rezultat = QString::number(celsius);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "°F"){
+                             float fahrenheit = temperatura.toFloat() * 33.8;
+                             QString rezultat = QString::number(fahrenheit);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "K"){
+                             float kelvin = temperatura.toFloat() * 274.1;
+                             QString rezultat = QString::number(kelvin);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                     }
+
+                     if( FromTemperaturaComboBox == "°F"){ // Verificam daca convertim din grade fahrenheit
+                         if (ToTemperaturaComboBox == "°C"){
+                             float celsius = temperatura.toFloat() * (-17.22);
+                             QString rezultat = QString::number(celsius);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "°F"){
+                             float fahrenheit = temperatura.toFloat() * 1;
+                             QString rezultat = QString::number(fahrenheit);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "K"){
+                             float kelvin = temperatura.toFloat() * 255.9;
+                             QString rezultat = QString::number(kelvin);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                     }
+
+                     if( FromTemperaturaComboBox == "K"){ // Verificam daca convertim din kelvin
+                         if (ToTemperaturaComboBox == "°C"){
+                             float celsius = temperatura.toFloat() * (-272.1);
+                             QString rezultat = QString::number(celsius);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "°F"){
+                             float fahrenheit = temperatura.toFloat() * (-457.9);
+                             QString rezultat = QString::number(fahrenheit);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                         else if (ToTemperaturaComboBox == "K"){
+                             float kelvin = temperatura.toFloat() * 1;
+                             QString rezultat = QString::number(kelvin);
+                             ui->outputTemperatura->setText(rezultat);
+                         }
+                     }
+      }
+
+
 }
 
