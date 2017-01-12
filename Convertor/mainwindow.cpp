@@ -1523,5 +1523,68 @@ void MainWindow::on_calculeazaButton_clicked()
 
                  }
       }
+
+
+
+    QString viteza = ui->inputViteza->text();
+      if (viteza.length() != 0){
+
+              QString FromVitezaComboBox = ui->FromViteza->currentText();
+              QString ToVitezaCombobox = ui->ToViteza->currentText();
+
+                   if( FromVitezaComboBox == "km/h"){ // Verificam daca convertim din km/h
+                       if (ToVitezaCombobox == "km/h"){
+                           float kmh = viteza.toFloat() * 1;
+                           QString rezultat = QString::number(kmh);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "mph"){
+                           float mph = viteza.toFloat() * 0.6214;
+                           QString rezultat = QString::number(mph);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "m/s"){
+                           float ms = viteza.toFloat() * 0.2778;
+                           QString rezultat = QString::number(ms);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                   }
+
+                   if( FromVitezaComboBox == "mph"){ // Verificam daca convertim din mph
+                       if (ToVitezaCombobox == "km/h"){
+                           float kmh = viteza.toFloat() * 1.609;
+                           QString rezultat = QString::number(kmh);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "mph"){
+                           float mph = viteza.toFloat() * 1;
+                           QString rezultat = QString::number(mph);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "m/s"){
+                           float ms = viteza.toFloat() * 0.447;
+                           QString rezultat = QString::number(ms);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                   }
+
+                   if( FromVitezaComboBox == "m/s"){ // Verificam daca convertim din m/s
+                       if (ToVitezaCombobox == "km/h"){
+                           float kmh = viteza.toFloat() * 3.6;
+                           QString rezultat = QString::number(kmh);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "mph"){
+                           float mph = viteza.toFloat() * 2.237;
+                           QString rezultat = QString::number(mph);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                       else  if (ToVitezaCombobox == "m/s"){
+                           float ms = viteza.toFloat() * 1;
+                           QString rezultat = QString::number(ms);
+                           ui->outputViteza->setText(rezultat);
+                       }
+                   }
+      }
 }
 
