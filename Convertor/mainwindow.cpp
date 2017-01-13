@@ -2419,6 +2419,65 @@ void MainWindow::on_calculeazaButton_clicked()
     }
 
 
+    QString consum = ui->inputConsum->text();
+    if (consum.length() != 0){
 
+        QString FromConsumComboBox = ui->FromConsum->currentText();
+        QString ToConsumCombobox = ui->ToConsum->currentText();
+
+        if( FromConsumComboBox == "l/100 km"){ // Verificam daca convertim din l/100 km
+            if (ToConsumCombobox == "l/100 km"){
+                float l100 = consum.toFloat() / 1;
+                QString rezultat = QString::number(l100);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "mi/gal"){
+                float milegalon = 235.2 / consum.toFloat();
+                QString rezultat = QString::number(milegalon);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "km/l"){
+                float kmlitru = consum.toFloat() * (100 / consum.toFloat())/ consum.toFloat();
+                QString rezultat = QString::number(kmlitru);
+                ui->outputConsum->setText(rezultat);
+            }
+        }
+
+        if( FromConsumComboBox == "mi/gal"){ // Verificam daca convertim din mile / galon
+            if (ToConsumCombobox == "l/100 km"){
+                float l100 = 235.2 / consum.toFloat() ;
+                QString rezultat = QString::number(l100);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "mi/gal"){
+                float milegalon = consum.toFloat() / 1;
+                QString rezultat = QString::number(milegalon);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "km/l"){
+                float kmlitru = consum.toFloat() / 2.35214583;
+                QString rezultat = QString::number(kmlitru);
+                ui->outputConsum->setText(rezultat);
+            }
+        }
+
+        if( FromConsumComboBox == "km/l"){ // Verificam daca convertim din km / l
+            if (ToConsumCombobox == "l/100 km"){
+                float l100 = 100 / consum.toFloat();
+                QString rezultat = QString::number(l100);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "mi/gal"){
+                float milegalon = consum.toFloat() * 2.35214583;
+                QString rezultat = QString::number(milegalon);
+                ui->outputConsum->setText(rezultat);
+            }
+            else if (ToConsumCombobox == "km/l"){
+                float kmlitru = consum.toFloat() / 1;
+                QString rezultat = QString::number(kmlitru);
+                ui->outputConsum->setText(rezultat);
+            }
+        }
+    }
 }
 
