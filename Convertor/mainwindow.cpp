@@ -170,6 +170,16 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->ToDensitate->addItem("kg/m³");
     ui->ToDensitate->addItem("t/m³");
 
+    // Convertire CONSUM COMBUSTIBIL din ->>
+    ui->FromConsum->addItem("l/100 km");
+    ui->FromConsum->addItem("mi/gal");
+    ui->FromConsum->addItem("km/l");
+
+    // Convertire CONSUM COMBUSTIBIL in ->>
+    ui->ToConsum->addItem("l/100 km");
+    ui->ToConsum->addItem("mi/gal");
+    ui->ToConsum->addItem("km/l");
+
 
 }
 
@@ -2403,7 +2413,12 @@ void MainWindow::on_calculeazaButton_clicked()
         }
 
 
+
+
+
     }
+
+
 
 }
 
