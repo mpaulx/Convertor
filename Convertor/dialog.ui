@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>111</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Lungime&lt;/span&gt;&lt;/p&gt;&lt;p&gt;cm, Centimetri&lt;/p&gt;&lt;p&gt;ft, Picioare (feets)&lt;/p&gt;&lt;p&gt;in, Țol (inches)&lt;/p&gt;&lt;p&gt;km, Kilometri&lt;/p&gt;&lt;p&gt;m, Metri&lt;/p&gt;&lt;p&gt;mm, Milimetri&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>-20</y>
+     <width>81</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Temperatura&lt;/span&gt;&lt;/p&gt;&lt;p&gt;C°, Grade Celsius&lt;/p&gt;&lt;p&gt;F°, Grade Fahrenheit &lt;/p&gt;&lt;p&gt;K°, Grade Kelvin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>111</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Arie&lt;/span&gt;&lt;/p&gt;&lt;p&gt;cm&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Centimetri patrati&lt;/p&gt;&lt;p&gt;ft&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Picioare patrati (feets)&lt;/p&gt;&lt;p&gt;in&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Țo patratil (inches)&lt;/p&gt;&lt;p&gt;km&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Kilometri patrati&lt;/p&gt;&lt;p&gt;m&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Metri patrati&lt;/p&gt;&lt;p&gt;mm&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;, Milimetri patrati&lt;/p&gt;&lt;p&gt;ha, Hectar&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>111</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Volum&lt;/span&gt;&lt;/p&gt;&lt;p&gt;cl, Centilitri&lt;/p&gt;&lt;p&gt;cm&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;, Centimetri cubi&lt;/p&gt;&lt;p&gt;dl, Decilitri&lt;/p&gt;&lt;p&gt;dm&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;, Centimetri cubi&lt;/p&gt;&lt;p&gt;ft&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;, Picioare cubi (feets)&lt;/p&gt;&lt;p&gt;in&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;, Țol cub (inches)&lt;/p&gt;&lt;p&gt;l, Litri&lt;/p&gt;&lt;p&gt;m&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;, Metri cubi&lt;/p&gt;&lt;p&gt;ml, Mililitri&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>111</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Timp&lt;/span&gt;&lt;/p&gt;&lt;p&gt;h, Oră&lt;/p&gt;&lt;p&gt;min, Minute&lt;/p&gt;&lt;p&gt;s, Secundă&lt;/p&gt;&lt;p&gt;sapt, Saptamana&lt;/p&gt;&lt;p&gt;lun, Luna,&lt;/p&gt;&lt;p&gt;an,&lt;/p&gt;&lt;p&gt;dec, Deceniu&lt;/p&gt;&lt;p&gt;sec, Secol&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>260</y>
+     <width>211</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Consum de combustibil&lt;/span&gt;&lt;/p&gt;&lt;p&gt;l/100km, Litru / 100 kilometri&lt;/p&gt;&lt;p&gt;mpg, Mile / galon ( US)&lt;/p&gt;&lt;p&gt;km/l, Kilometru / litru&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>240</y>
+     <width>131</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Presiune&lt;/span&gt;&lt;/p&gt;&lt;p&gt;bar, Bar&lt;/p&gt;&lt;p&gt;psi, Funte pe țol pătrat&lt;/p&gt;&lt;p&gt;   (pounds per square inch)&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>81</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Energie&lt;/span&gt;&lt;/p&gt;&lt;p&gt;cal, Calorie&lt;/p&gt;&lt;p&gt;J, Jouli&lt;/p&gt;&lt;p&gt;kcal, Kilocalorie&lt;/p&gt;&lt;p&gt;kJ, Kilojouli&lt;/p&gt;&lt;p&gt;kW, Kilowatt&lt;/p&gt;&lt;p&gt;W, Watt&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

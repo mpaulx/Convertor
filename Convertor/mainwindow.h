@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QString>
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -18,6 +19,8 @@ public:
 
 private slots:
     void on_calculeazaButton_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
