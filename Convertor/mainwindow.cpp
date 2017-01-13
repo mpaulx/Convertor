@@ -2127,5 +2127,283 @@ void MainWindow::on_calculeazaButton_clicked()
             }
         }
     }
+
+
+
+    QString densitate = ui->inputDensitate->text();
+    if (densitate.length() != 0){
+
+        QString FromDensitateComboBox = ui->FromDensitate->currentText();
+        QString ToDensitateComboBox = ui->ToDensitate->currentText();
+
+        if( FromDensitateComboBox == "g/ml"){ // Verificam daca convertim din gram / mililitru
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 1;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000000000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1000000;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "g/l"){ // Verificam daca convertim din gram / litru
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "kg/l"){ // Verificam daca convertim din kilgram / litru
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 1;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000000000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1000000;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "mg/m³"){ // Verificam daca convertim din miligram / metru cub
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 0.000000001;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 0.000001;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 0.000000001;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 0.000001;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 0.000000001;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "g/m³"){ // Verificam daca convertim din gram / metru cub
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 0.000001;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 0.000001;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 0.000001;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "kg/m³"){ // Verificam daca convertim din kilogram / metru cub
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 0.001;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+        if( FromDensitateComboBox == "t/m³"){ // Verificam daca convertim din tona / metru cub
+            if (ToDensitateComboBox == "g/ml"){
+                float gml = densitate.toFloat() * 1;
+                QString rezultat = QString::number(gml);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/l"){
+                float gl = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(gl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/l"){
+                float kgl = densitate.toFloat() * 1;
+                QString rezultat = QString::number(kgl);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "mg/m³"){
+                float mgm = densitate.toFloat() * 1000000000;
+                QString rezultat = QString::number(mgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "g/m³"){
+                float gm = densitate.toFloat() * 1000000;
+                QString rezultat = QString::number(gm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "kg/m³"){
+                float kgm = densitate.toFloat() * 1000;
+                QString rezultat = QString::number(kgm);
+                ui->outputDensitate->setText(rezultat);
+            }
+            else if (ToDensitateComboBox == "t/m³"){
+                float tm = densitate.toFloat() * 1;
+                QString rezultat = QString::number(tm);
+                ui->outputDensitate->setText(rezultat);
+            }
+        }
+
+
+    }
+
 }
 
