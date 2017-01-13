@@ -2492,3 +2492,10 @@ void MainWindow::on_pushButton_clicked()
  fereastra.setModal(true);
  fereastra.exec();
 }
+
+void MainWindow::on_stergeButton_clicked()
+{
+    foreach(QLineEdit *widget, this->findChildren<QLineEdit*>()) {
+        widget->clear();
+    }
+}
