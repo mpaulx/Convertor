@@ -152,6 +152,25 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->ToPresiune->addItem("bar");
     ui->ToPresiune->addItem("psi");
 
+    // Convertire DENSITATE din ->>
+    ui->FromDensitate->addItem("g/ml");
+    ui->FromDensitate->addItem("g/l");
+    ui->FromDensitate->addItem("kg/l");
+    ui->FromDensitate->addItem("mg/m³");
+    ui->FromDensitate->addItem("g/m³");
+    ui->FromDensitate->addItem("kg/m³");
+    ui->FromDensitate->addItem("t/m³");
+
+    // Convertire DENSITATE in ->>
+    ui->ToDensitate->addItem("g/ml");
+    ui->ToDensitate->addItem("g/l");
+    ui->ToDensitate->addItem("kg/l");
+    ui->ToDensitate->addItem("mg/m³");
+    ui->ToDensitate->addItem("g/m³");
+    ui->ToDensitate->addItem("kg/m³");
+    ui->ToDensitate->addItem("t/m³");
+
+
 }
 
 MainWindow::~MainWindow()
@@ -2071,6 +2090,41 @@ void MainWindow::on_calculeazaButton_clicked()
                 ui->outputEnergie->setText(rezultat);
             }
 
+        }
+    }
+
+
+
+    QString presiune = ui->inputPresiune->text();
+    if (presiune.length() != 0){
+
+        QString FromPresiuneComboBox = ui->FromPresiune->currentText();
+        QString ToPresiuneComboBox = ui->ToPresiune->currentText();
+
+        if( FromPresiuneComboBox == "bar"){ // Verificam daca convertim din bar
+            if (ToPresiuneComboBox == "bar"){
+                float bar = presiune.toFloat() * 1;
+                QString rezultat = QString::number(bar);
+                ui->outputPresiune->setText(rezultat);
+            }
+            else if (ToPresiuneComboBox == "psi"){
+                float psi = presiune.toFloat() * 14.5037738;
+                QString rezultat = QString::number(psi);
+                ui->outputPresiune->setText(rezultat);
+            }
+        }
+
+        if( FromPresiuneComboBox == "psi"){ // Verificam daca convertim din psi
+            if (ToPresiuneComboBox == "bar"){
+                float bar = presiune.toFloat() * 0.0689475729;
+                QString rezultat = QString::number(bar);
+                ui->outputPresiune->setText(rezultat);
+            }
+            else if (ToPresiuneComboBox == "psi"){
+                float psi = presiune.toFloat() * 1;
+                QString rezultat = QString::number(psi);
+                ui->outputPresiune->setText(rezultat);
+            }
         }
     }
 }
